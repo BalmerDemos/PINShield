@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}"> <!-- Link to your CSS -->
+</head>
+<body>
+    <div class="banner">
+        <h1>Thank You!</h1>
+    </div>
+
+    <div class="content">
+        <p>{{ description }}</p>
+        <p><a href="{% url 'welcome' %}">Go back to the welcome page</a></p>
+        <p><a href="{% url 'load_keys' %}">Load keys</a></p>
+    </div>
+    <div class="application_content">
+
+    </div>
+</body>
+</html>

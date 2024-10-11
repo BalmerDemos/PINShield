@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}"> <!-- Link to your CSS -->
+</head>
+<body>
+    <div class="banner">
+        <h1>Welcome to the PinShield Project!</h1>
+    </div>
+    <div class="content">
+        <h2>About This Project</h2>
+        <p>This project demonstrates key generation and PIN encryption using Django and Python.</p>
+        <p>We utilize the cryptography library for secure encryption of sensitive information.</p>
+        <h2>Developer Information</h2>
+        <p>Developed by: Balmer Valencia</p>
+        <p>Find me on <a href="https://github.com/BalmerDemos" target="_blank">GitHub</a> and <a href="https://www.linkedin.com/in/balmer-valencia-988a42273" target="_blank">LinkedIn</a>.</p>
+        <a href="{% url 'pin_entry' %}">Proceed to enter your PIN</a>
+    </div>
+</body>
+</html>

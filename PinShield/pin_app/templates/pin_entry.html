@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Your PIN</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}"> <!-- Link to your CSS -->
+</head>
+<body>
+    <div class="banner">
+        <h1>Enter Your PIN</h1>
+    </div>
+
+    <div class="content">
+        <form method="post">
+            {% csrf_token %}
+            <label for="pin">PIN:</label>
+            <input type="password" name="pin" id="pin" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <p><a href="{% url 'welcome' %}">Back to Welcome</a></p>
+    </div>
+</body>
+</html>

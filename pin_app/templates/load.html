@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Keys</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="banner">
+        <h1>Public and Private Keys</h1>
+    </div>
+
+    <div class="content">
+        <h2>Private Key</h2>
+        <pre>{{ private_key }}</pre> <!-- Display private key -->
+
+        <h2>Public Key</h2>
+        <pre>{{ public_key }}</pre> <!-- Display public key -->
+
+        <p><a href="{% url 'welcome' %}">Back to Welcome</a></p>
+    </div>
+</body>
+</html>

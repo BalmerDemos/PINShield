@@ -1,0 +1,41 @@
+body {
+    background-image: url('/static/images/snow_background.png'); /* Path to your background image */
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for contrast */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+a {
+    color: red; /* Link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+
+
